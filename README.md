@@ -24,13 +24,13 @@ The class is `unotificationi` you can change using css/scss its style, e.g. :
 
 ```ts
 // app.module.ts...
-import { UixLightNotifierModule } from "uix-light-notifier";
+import {UixLightNotifierModule} from 'uix-light-notifier';
 // ...
 @NgModule({
   imports: [
     //...
-    UixLightNotifierModule
-  ]
+    UixLightNotifierModule,
+  ],
 })
 export class AppModule {}
 ```
@@ -48,19 +48,19 @@ Put `<uix-light-notifier></uix-light-notifier>` somewhere.
 ### Use `UixLightNotifierService` to show messages
 
 ```ts
-import { UixLightNotifierService } from "uix-light-notifier";
+import {UixLightNotifierService} from 'uix-light-notifier';
 //...
 export class SomeComponent {
   constructor(private uixLightNotifierService: UixLightNotifierService) {}
   show() {
-    this.uixLightNotifierService.show("My Message");
+    this.uixLightNotifierService.show('My Message');
   }
 }
 ```
 
 #### Example
 
-![Alt text](demo.gif?raw=true "Example")
+![Alt text](https://raw.githubusercontent.com/thiswallz/uix-light-notifier/master/demo.gif?raw=true 'Example')
 
 ## Authors
 
