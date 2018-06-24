@@ -1,0 +1,68 @@
+.unotification {
+  font-family: Roboto, Arial, sans-serif;
+  border-radius: 62px 0px 0px 63px;
+  -moz-border-radius: 62px 0px 0px 63px;
+  -webkit-border-radius: 62px 0px 0px 63px;
+  border: 0px solid #000000;
+  top: 50%;
+  display: none;
+  right: 0px;
+  width: 220px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  position: fixed;
+  z-index: 1;
+  font-size: 15px;
+}
+
+.unotification.show {
+  display: block;
+  -webkit-animation: fadein 1s, fadeout 1s 4s;
+  animation: fadein 1s, fadeout 1s 4s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    right: -340px;
+    opacity: 0;
+  }
+  to {
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    right: -340px;
+    opacity: 0;
+  }
+  to {
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    right: 0px;
+    opacity: 1;
+  }
+  to {
+    right: -340px;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    right: 0px;
+    opacity: 1;
+  }
+  to {
+    right: -340px;
+    opacity: 0;
+  }
+}

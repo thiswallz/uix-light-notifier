@@ -1,0 +1,21 @@
+# UixLightNotifier
+
+A basic message service and component for Angular 6 apps.
+
+## Quick Start
+
+### Install
+
+```bash
+npm i --save uix-light-notifier
+```
+
+### Add the styles
+
+The class is `unotificationi` you can change through out css/scss the style, example:
+
+```
+.unotification{
+background-color: red;
+}
+```

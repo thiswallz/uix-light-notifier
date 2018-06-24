@@ -1,0 +1,9 @@
+import { NgModule } from "@angular/core";
+import { UixLightNotifierComponent } from "./uix-light-notifier.directive";
+
+@NgModule({
+  imports: [],
+  declarations: [UixLightNotifierDirective],
+  exports: [UixLightNotifierDirective]
+})
+export class UixLightNotifierModule {}
